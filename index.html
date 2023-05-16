@@ -48,16 +48,49 @@
 
     <!-- MAIN  -->
     <main>
-
       <!-- backdrop -->
-      <section class="backdrop is-hidden" data-backdrop>
-        <div class="modal is-hidden" data-modal>
-          <form action="">
+      <section class="backdrop is-hiden" data-backdrop>
+        <div class="modal is-hiden" data-modal>
+          <form class="form-modal" name="formulario">
+            <h2 class="modal-title">
+              <strong>Deje sus datos, nos contactaremos con usted</strong>
+            </h2>
 
+            <label for="name">Nombre</label>
+            <input class="input-form" 
+                   id="name" 
+                   type="text" 
+                   name="username"
+                   autofocus
+                   />
+                   
+            
+
+            <label for="phone">Teléfono</label>
+            <input class="input-form" 
+                   id="phone" 
+                   type="tel"
+                   name="user-phone"
+                   />
+
+            <label for="mail">E-mail</label>
+            <input class="input-form" 
+                   id="mail" 
+                   type="email" />
+
+            <label for="comit">Comentarios</label>
+            <input class="input-form comment"
+                   id="comit" 
+                   type="text" 
+                   placeholder="Introduzca el texto"
+                   />
+
+            <p class="terms-and-Conditions">Estoy de acuerdo con el boletín informativo y acepto los Términos y Condiciones</p>
+            <button class="send-form" type="submit">Enviar</button>
           </form>
-          <button class="circle-close" type="button" data-modal-close>  
+           <button class="circle-close" type="button" data-modal-close>
             <svg class="close">
-                <use href="./images/SVG/sprite.svg#close"></use>
+              <use href="./images/SVG/sprite.svg#close"></use>
             </svg>
           </button>
         </div>
@@ -137,21 +170,15 @@
         <!-- IMAGENES  -->
         <ul class="what-do-box">
           <li class="image-whatdo1">
-            <div class="box-what-do" href="#">
-              APLICACIONES DE ESCRITORIO
-            </div>
+            <div class="box-what-do" href="#">APLICACIONES DE ESCRITORIO</div>
           </li>
 
           <li class="image-whatdo2">
-            <div class="box-what-do" href="#">
-              APLICACIONES MÓVILES
-            </div>
+            <div class="box-what-do" href="#">APLICACIONES MÓVILES</div>
           </li>
 
           <li class="image-whatdo3">
-            <div class="box-what-do" href="#">
-              SOLUCIONES DE DISEÑO
-            </div>
+            <div class="box-what-do" href="#">SOLUCIONES DE DISEÑO</div>
           </li>
         </ul>
       </section>
@@ -517,17 +544,21 @@
           </ul>
         </aside>
 
-         <!-- Suscripción -->
+        <!-- Suscripción -->
         <aside class="form-suscription">
           <form action="">
-            <h3 class="title-h3 title-suscription">SUSCRÍBASE al boletín informativo</h3>
-            <input  class="input-suscription" 
-                    type="email" 
-                    placeholder="Correo electrónico"
-                    required>
-            <button class="button-suscription" type="button"> 
+            <h3 class="title-h3 title-suscription">
+              SUSCRÍBASE al boletín informativo
+            </h3>
+            <input
+              class="input-suscription"
+              type="email"
+              placeholder="Correo electrónico"
+              required
+            />
+            <button class="button-suscription" type="button">
               <div class="button-send">
-                Suscríbase 
+                Suscríbase
                 <svg class="icon-send">
                   <use href="./images/SVG/sprite.svg#icon-enviar-icono"></use>
                 </svg>
@@ -538,6 +569,6 @@
       </div>
     </footer>
 
-     <script src="./js/modal.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

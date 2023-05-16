@@ -163,9 +163,50 @@ header{
 
   transition: transform cubic-bezier(0.4, 0, 0.2, 1), 1s;
   transform: translateY(0);
+  
 }
 .modal.is-hidden{
   transform: translateY(100%);
+}
+.form-modal{
+  padding: 40px;
+  position: absolute;
+}
+.modal-title{
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  margin-bottom: 12px;
+}
+.input-form{
+  display: block;
+  padding: 15px;
+  outline: none;
+  width: 448px;
+  margin: 4px 0 10px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+.comment{
+  height: 120px;
+  margin-bottom: 20px;
+}
+.terms-and-Conditions{
+  color: var(--primary-text-color);
+  line-height: 1.71;
+  
+}
+.send-form{
+  background-color: var(--accent-color);
+  padding: 10px 75px;
+  color: var(--primary-white-color);
+  letter-spacing: 0.06em;
+  border: none;
+  margin-bottom: 41.5px;
+  cursor: pointer;
+}
+.send-form:hover{
+  background-color: var(--button-primary-hover);
 }
 .circle-close{
   display: flex;
@@ -174,7 +215,7 @@ header{
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  margin: 8px;
+  margin: 8px 8px 0 0;
   cursor: pointer;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: var(--primary-white-color);
