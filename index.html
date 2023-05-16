@@ -56,39 +56,72 @@
               <strong>Deje sus datos, nos contactaremos con usted</strong>
             </h2>
 
-            <label for="name">Nombre</label>
-            <input class="input-form" 
-                   id="name" 
-                   type="text" 
-                   name="username"
-                   autofocus
-                   />
-                   
-            
+            <div class="input-wrapper">
+              <label for="name">Nombre</label>
+              <input
+                class="input-form"
+                id="name"
+                type="text"
+                name="username"
+                autofocus
+              />
+              <svg class="icon-imput">
+                <use href="./images/SVG/sprite.svg#icon-persona"></use>
+              </svg>
+            </div>
 
-            <label for="phone">Teléfono</label>
-            <input class="input-form" 
-                   id="phone" 
-                   type="tel"
-                   name="user-phone"
-                   />
+            <div class="input-wrapper">
+              <label for="phone">Teléfono</label>
+              <input
+                class="input-form"
+                id="phone"
+                type="tel"
+                name="user-phone"
+              />
+              <svg class="icon-imput">
+                <use href="./images/SVG/sprite.svg#icon-tel"></use>
+              </svg>
+            </div>
 
-            <label for="mail">E-mail</label>
-            <input class="input-form" 
-                   id="mail" 
-                   type="email" />
+            <div class="input-wrapper">
+              <label for="email">E-mail</label>
+              <input class="input-form" id="email" type="email" />
+              <svg class="icon-imput">
+                <use href="./images/SVG/sprite.svg#icon-mail"></use>
+              </svg>
+            </div>
 
-            <label for="comit">Comentarios</label>
-            <input class="input-form comment"
-                   id="comit" 
-                   type="text" 
-                   placeholder="Introduzca el texto"
-                   />
+            <div class="input-wrapper">
+              <label for="comment">Comentarios</label>
+              <textarea
+                class="input-form"
+                id="comit"
+                type="text"
+                placeholder="Introduzca el texto"
+                rows="5"
+              ></textarea>
+            </div>
 
-            <p class="terms-and-Conditions">Estoy de acuerdo con el boletín informativo y acepto los Términos y Condiciones</p>
-            <button class="send-form" type="submit">Enviar</button>
+            <div class="input-wrapper">
+              <input
+                class="terms-and-Conditions"
+                type="checkbox"
+                name="terms"
+                id="termsConditions"
+              />
+              <label
+                >Estoy de acuerdo con el boletín informativo y acepto los
+                Términos y Condiciones</label
+              >
+            </div>
+
+            <button 
+              class="send-form" type="submit">
+                Enviar
+            </button>
           </form>
-           <button class="circle-close" type="button" data-modal-close>
+
+          <button class="circle-close" type="button" data-modal-close>
             <svg class="close">
               <use href="./images/SVG/sprite.svg#close"></use>
             </svg>
