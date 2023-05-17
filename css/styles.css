@@ -194,11 +194,13 @@ header{
 .input-form:focus {
   cursor: pointer;
   border: 1px solid #2196F3;
+  
 }
 .input-wrapper{
   position: relative;
 }
-.input-wrapper:hover{
+.input-wrapper:hover,
+.input-wrapper:focus{
 fill: var(--accent-color);  
 }
 .icon-imput{
@@ -209,6 +211,7 @@ fill: var(--accent-color);
   top: 50%;
   transform: translateY(-50%);
 }
+
 .modal__checkbox{
   position: absolute;
   appearance:var(--logo-black) ;
@@ -223,12 +226,18 @@ fill: var(--accent-color);
 .comment{
   padding: 16px;
 }
+.comment::placeholder{
+  color: rgba(117, 117, 117, 0.5);
+  
+}
 .modal__text{
   position: relative;
   right: -25px;
   width: 400px;
   margin-bottom: 12px;
   line-height: 1.7;
+  
+  
 }
 .modal__bottom{
   background-color: var(--accent-color);
