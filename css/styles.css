@@ -188,9 +188,18 @@ header{
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   width: 448px;
+  outline: none;
+}
+.input-form:hover,
+.input-form:focus {
+  cursor: pointer;
+  border: 1px solid #2196F3;
 }
 .input-wrapper{
   position: relative;
+}
+.input-wrapper:hover{
+fill: var(--accent-color);  
 }
 .icon-imput{
   color: var(--primary-title-color);
@@ -231,7 +240,8 @@ header{
   display: block;
   margin: 0 auto;
 }
-.modal__bottom:hover{
+.modal__bottom:hover,
+.modal__bottom:focus{
   background-color: var(--button-primary-hover);
 }
 .circle-close{
@@ -246,10 +256,11 @@ header{
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: var(--primary-white-color);
   z-index: 1;
+  fill: var(--logo-black);
 }
 .circle-close:hover,
 .circle-close:focus{
-  border: 3px solid var(--primary-text-color);
+  fill: var(--accent-color);
 }
 
 /*  TITULO PRINCIPAL */
@@ -541,6 +552,12 @@ color: var(--primary-white-color);
   padding: 16px 15px;
   font-size: 16px;
   line-height: 1.25;
+  outline: none;
+}
+    
+  
+.input-suscription:active {
+  border: none;
 }
 .button-send{
   display: flex;

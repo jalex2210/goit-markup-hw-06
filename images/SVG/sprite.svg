@@ -32,7 +32,7 @@
         
         <symbol id="icon-enviar-icono" viewBox="0 0 32 32">
             <path fill="#fff" d="M32 0 0 18l10.2 3.8L26 7 14 23.2V32l5.7-6.7L27 28l5-28z"
-                style="fill:var(--color1, #fff)" />
+                style="fill:var()" />
         </symbol>
         
         <symbol id="close" viewBox="0 0 32 32">
@@ -40,7 +40,7 @@
                 style="fill:var(--color1, #fff)" />
             <path
                 d="m22.4 10.8-1.2-1.2-4.7 4.7-4.7-4.7-1.1 1.2 4.7 4.7-4.7 4.7 1.1 1.1 4.7-4.7 4.7 4.7 1.2-1.1-4.7-4.7 4.7-4.7z"
-                style="fill:var(--color2, #000)" />
+                style="" />
         </symbol>
 
         <symbol id="antena" viewBox="0 0 30 32">
