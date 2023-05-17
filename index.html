@@ -53,11 +53,11 @@
         <div class="modal is-hiden" data-modal>
           <form class="form-modal" name="formulario">
             <h2 class="modal-title">
-              <strong>Deje sus datos, nos contactaremos con usted</strong>
+              Deje sus datos, nos contactaremos con usted
             </h2>
 
-            <div class="input-wrapper">
-              <label for="name">Nombre</label>
+            <label class="input-wrapper" for="name"
+              >Nombre
               <input
                 class="input-form"
                 id="name"
@@ -68,10 +68,10 @@
               <svg class="icon-imput">
                 <use href="./images/SVG/sprite.svg#icon-persona"></use>
               </svg>
-            </div>
+            </label>
 
-            <div class="input-wrapper">
-              <label for="phone">Teléfono</label>
+            <label class="input-wrapper" for="phone"
+              >Teléfono
               <input
                 class="input-form"
                 id="phone"
@@ -81,44 +81,41 @@
               <svg class="icon-imput">
                 <use href="./images/SVG/sprite.svg#icon-tel"></use>
               </svg>
-            </div>
+            </label>
 
-            <div class="input-wrapper">
-              <label for="email">E-mail</label>
+            <label class="input-wrapper" for="email"
+              >E-mail
               <input class="input-form" id="email" type="email" />
               <svg class="icon-imput">
                 <use href="./images/SVG/sprite.svg#icon-mail"></use>
               </svg>
-            </div>
+            </label>
 
-            <div class="input-wrapper">
-              <label for="comment">Comentarios</label>
+            <label class="input-wrapper" for="comment"
+              >Comentarios
               <textarea
-                class="input-form"
-                id="comit"
+                class="input-form comment"
+                id="comment"
                 type="text"
                 placeholder="Introduzca el texto"
                 rows="5"
               ></textarea>
-            </div>
+            </label>
 
             <div class="input-wrapper">
               <input
-                class="terms-and-Conditions"
+                class="modal__checkbox"
                 type="checkbox"
                 name="terms"
                 id="termsConditions"
               />
-              <label
-                >Estoy de acuerdo con el boletín informativo y acepto los
-                Términos y Condiciones</label
-              >
+              <p class="modal__text">
+                Estoy de acuerdo con el boletín informativo y acepto los
+                Términos y Condiciones
+              </p>
             </div>
 
-            <button 
-              class="send-form" type="submit">
-                Enviar
-            </button>
+            <button class="modal__bottom" type="submit">Enviar</button>
           </form>
 
           <button class="circle-close" type="button" data-modal-close>
